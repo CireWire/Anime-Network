@@ -1,0 +1,6 @@
+{
+  "name": "Anime-network",
+  "tagline": "A sample using AngularJS, HTML5, CSS3, and Bootstrap.",
+  "body": "### Welcome!\r\nAnime Network is a sample site that utilizes AngularJS to create an Anime database. I'll be adding more directives and routes along the way to make it an SPA. I'm still learning to use AngularJS and I hope to soon incorporate it with Meteor, but until then I'm still sorting things out. I hope you can check it out and feel free to clone it for whatever reason you want!\r\n\r\n### Follow the process\r\nI'm using Trello to keep things sorted while I work on the repo. \r\nhttps://trello.com/b/hspKMTyu\r\n\r\n### Authors and Contributors\r\n@CireWire and all sourced contributors to the HTML5 and Bootstrap codes.\r\n\r\n### Support or Contact\r\nYou can send a message if you have any questions. \r\nFollow me on Twitter! www.twitter.com/CireWire\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
