@@ -74,7 +74,7 @@
         <!-- Heading Row -->
         <div class="row">
             <div class="col-md-8">
-                <img class="img-responsive img-rounded" src="http://placehold.it/900x350" alt="">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/yIDUdPTD1tQ" frameborder="0" allowfullscreen></iframe>
             </div>
             <!-- /.col-md-8 -->
             <div class="col-md-4">
@@ -101,23 +101,21 @@
         <!-- Content Row -->
 		<div class="main" ng-controller='MainController'>
         <div class="row">
-            <div class="col-md-4">
-                <h2>{{ title }}</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rem nisi accusamus error velit animi non ipsa placeat. Recusandae, suscipit, soluta quibusdam accusamus a veniam quaerat eveniet eligendi dolor consectetur.</p>
-                <a class="btn btn-default" href="#">More Info</a>
+            <div ng-repeat="anime in showings" class="col-md-4">
+                <h2 class="title">{{ anime.name }}</h2>
+                <img ng-src= "{{ anime.pic }}">
+				<p class="about">{{ anime.about }}</p>
+                <div class="rating">
+				<p class= "likes" ng-click="plusOne($index)">+ {{ anime.likes }} </p>
+				<p class="dislikes" ng-click="minusOne($index)">- {{ anime.dislikes }} </p>
+				</div>
             </div>
+			
             <!-- /.col-md-4 -->
-            <div class="col-md-4">
-                <h2>Heading 2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rem nisi accusamus error velit animi non ipsa placeat. Recusandae, suscipit, soluta quibusdam accusamus a veniam quaerat eveniet eligendi dolor consectetur.</p>
-                <a class="btn btn-default" href="#">More Info</a>
-            </div>
+            
+             
             <!-- /.col-md-4 -->
-            <div class="col-md-4">
-                <h2>Heading 3</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rem nisi accusamus error velit animi non ipsa placeat. Recusandae, suscipit, soluta quibusdam accusamus a veniam quaerat eveniet eligendi dolor consectetur.</p>
-                <a class="btn btn-default" href="#">More Info</a>
-            </div>
+            
             <!-- /.col-md-4 -->
         </div>
 		</div>
